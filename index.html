@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>README.md Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Syne:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<header>
+  <div class="logo">README<span>.md</span></div>
+  <div class="tagline">Interactive syntax reference</div>
+</header>
+
+<div class="layout">
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- Intro -->
+    <div class="intro">
+      <div class="eyebrow">// Quick Reference</div>
+      <h1>Markdown Syntax <span>Guide</span></h1>
+      <p>Everything you need to write clean, well-structured README files. Each section shows the raw syntax alongside its rendered output.</p>
+    </div>
+
+    <!-- ── HEADINGS ── -->
+    <div class="section">
+      <span class="section-anchor" id="headings"></span>
+      <div class="section-header">
+        <span class="section-tag">#</span>
+        <h2>Headings</h2>
+      </div>
+      <p>Use <code>#</code> symbols to create headings. The number of symbols sets the heading level (H1–H6).</p>
+
+      <div class="lesson">
+        <div class="lesson-header">
+          <span class="lesson-title">Heading levels 1 – 4</span>
+          <span class="lesson-badge">syntax</span>
+        </div>
+        <div class="pane-grid">
+          <div class="pane">
+            <div class="pane-label">Markdown</div>
+            <pre><span class="token-kw"># </span>Heading 1
+<span class="token-kw">## </span>Heading 2
+<span class="token-kw">### </span>Heading 3
+<span class="token-kw">#### </span>Heading 4</pre>
+          </div>
+          <div class="pane">
+            <div class="pane-label">Preview</div>
+            <div class="preview">
+              <h1>Heading 1</h1>
+              <h2>Heading 2</h2>
+              <h3>Heading 3</h3>
+              <h4>Heading 4</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tip">
+        <span class="tip-icon">✦</span>
+        <span>Always put a space between the <code>#</code> and the heading text. Many parsers require it.</span>
+      </div>
+    </div>
+
+    <!-- ── PARAGRAPHS & LINE BREAKS ── -->
+    <div class="section">
+      <span class="section-anchor" id="paragraphs"></span>
+      <div class="section-header">
+        <span class="section-tag">¶</span>
+        <h2>Paragraphs &amp; Line Breaks</h2>
+      </div>
+      <p>Separate paragraphs with a blank line. End a line with two spaces for a soft line break.</p>
+      <div class="lesson">
+        <div class="lesson-header">
+          <span class="lesson-title">Paragraph separation</span>
+          <span class="lesson-badge">syntax</span>
+        </div>
+        <div class="pane-grid">
+          <div class="pane">
+            <div class="pane-label">Markdown</div>
+            <pre>First paragraph text here.
+
+Second paragraph starts after
+a blank line.</pre>
+          </div>
+          <div class="pane">
+            <div class="pane-label">Preview</div>
+            <div class="preview">
+              <p>First paragraph text here.</p>
+              <p>Second paragraph starts after a blank line.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── EMPHASIS ── -->
+    <div class="section">
+      <span class="section-anchor" id="emphasis"></span>
+      <div class="section-header">
+        <span class="section-tag">**</span>
+        <h2>Emphasis</h2>
+      </div>
+      <p>Bold, italic, and strikethrough let you highlight text inline.</p>
+      <div class="lesson">
+        <div class="lesson-header">
+          <span class="lesson-title">Bold, italic, strikethrough</span>
+          <span class="lesson-badge">inline</span>
+        </div>
+        <div class="pane-grid">
+          <div class="pane">
+            <div class="pane-label">Markdown</div>
+            <pre><span class="token-sym">**</span>Bold text<span class="token-sym">**</span>
+<span class="token-sym">*</span>Italic text<span class="token-sym">*</span>
+<span class="token-sym">***</span>Bold and italic<span class="token-sym">***</span>
+<span class="token-sym">~~</span>Strikethrough<span class="token-sym">~~</span></pre>
+          </div>
+          <div class="pane">
+            <div class="pane-label">Preview</div>
+            <div class="preview">
+              <p><strong>Bold text</strong></p>
+              <p><em>Italic text</em></p>
+              <p><strong><em>Bold and italic</em></strong></p>
+              <p><del>Strikethrough</del></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── LISTS ── -->
+    <div class="section">
+      <span class="section-anchor" id="lists"></span>
+      <div class="section-header">
+        <span class="section-tag">—</span>
+        <h2>Lists</h2>
+      </div>
+      <p>Unordered lists use <code>-</code>, <code>*</code>, or <code>+</code>. Ordered lists use numbers followed by a period.</p>
+      <div class="lesson">
+        <div class="lesson-header">
+          <span class="lesson-title">Unordered list</span>
+          <span class="lesson-badge">syntax</span>
+        </div>
+        <div class="pane-grid">
+          <div class="pane">
+            <div class="pane-label">Markdown</div>
+            <pre><span class="token-sym">- </span>Item one
+<span class="token-sym">- </span>Item two
+  <span class="token-sym">- </span>Nested item
+<span class="token-sym">- </span>Item three</pre>
+          </div>
+          <div class="pane">
+            <div class="pane-label">Preview</div>
+            <div class="preview">
+              <ul>
+                <li>Item one</li>
+                <li>Item two
+                  <ul><li>Nested item</li></ul>
+                </li>
+                <li>Item three</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lesson" style="margin-top:12px">
+        <div class="lesson-header">
+          <span class="lesson-title">Ordered list</span>
+          <span class="lesson-badge">syntax</span>
+        </div>
+        <div class="pane-grid">
+          <div class="pane">
+            <div class="pane-label">Markdown</div>
+            <pre><span class="token-sym">1. </span>First step
+<span class="token-sym">2. </span>Second step
+<span class="token-sym">3. </span>Third step</pre>
+          </div>
+          <div class="pane">
+            <div class="pane-label">Preview</div>
+            <div class="preview">
+              <ol>
+                <li>First step</li>
+                <li>Second step</li>
+                <li>Third step</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- ── BLOCKQUOTES ── -->
+    <div class="section">
+      <span class="section-anchor" id="blockquotes"></span>
+      <div class="section-header">
+        <span class="section-tag">&gt;</span>
+        <h2>Blockquotes</h2>
+      </div>
+      <p>Prefix lines with <code>&gt;</code> to create a blockquote. They can be nested.</p>
+      <div class="lesson">
+        <div class="lesson-header">
+          <span class="lesson-title">Blockquote &amp; nested</span>
+          <span class="lesson-badge">syntax</span>
+        </div>
+        <div class="pane-grid">
+          <div class="pane">
+            <div class="pane-label">Markdown</div>
+            <pre><span class="token-sym">&gt; </span>This is a blockquote.
+<span class="token-sym">&gt;</span>
+<span class="token-sym">&gt; &gt; </span>Nested quote.</pre>
+          </div>
+          <div class="pane">
+            <div class="pane-label">Preview</div>
+            <div class="preview">
+              <blockquote>
+                <p>This is a blockquote.</p>
+                <blockquote><p>Nested quote.</p></blockquote>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── HORIZONTAL RULE ── -->
+    <div class="section">
+      <span class="section-anchor" id="hr"></span>
+      <div class="section-header">
+        <span class="section-tag">—</span>
+        <h2>Horizontal Rule</h2>
+      </div>
+      <p>Three or more dashes, asterisks, or underscores on their own line create a divider.</p>
+      <div class="lesson">
+        <div class="lesson-header">
+          <span class="lesson-title">Divider variants</span>
+          <span class="lesson-badge">block</span>
+        </div>
+        <div class="pane-grid">
+          <div class="pane">
+            <div class="pane-label">Markdown</div>
+            <pre><span class="token-sym">---</span>
+
+<span class="token-sym">***</span>
+
+<span class="token-sym">___</span></pre>
+          </div>
+          <div class="pane">
+            <div class="pane-label">Preview</div>
+            <div class="preview">
+              <hr><hr><hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── LINKS ── -->
+    <div class="section">
+      <span class="section-anchor" id="links"></span>
+      <div class="section-header">
+        <span class="section-tag">[]</span>
+        <h2>Links</h2>
+      </div>
+      <p>Links use the pattern <code>[label](url)</code>. You can add a tooltip with a quoted title.</p>
+      <div class="lesson">
+        <div class="lesson-header">
+          <span class="lesson-title">Inline links</span>
+          <span class="lesson-badge">inline</span>
+        </div>
+        <div class="pane-grid">
+          <div class="pane">
+            <div class="pane-label">Markdown</div>
+            <pre><span class="token-sym">[</span>Visit GitHub<span class="token-sym">](</span><span class="token-str">https://github.com</span><span class="token-sym">)</span>
+
+<span class="token-sym">[</span>With tooltip<span class="token-sym">](</span><span class="token-str">https://example.com</span> <span class="token-cmt">"Hover me"</span><span class="token-sym">)</span></pre>
+          </div>
+          <div class="pane">
+            <div class="pane-label">Preview</div>
+            <div class="preview">
+              <p><a href="#">Visit GitHub</a></p>
+              <p><a href="#" title="Hover me">With tooltip</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── IMAGES ── -->
+    <div class="section">
+      <span class="section-anchor" id="images"></span>
+      <div class="section-header">
+        <span class="section-tag">!</span>
+        <h2>Images</h2>
+      </div>
+      <p>Images follow the same pattern as links, prefixed with a <code>!</code>. The alt text improves accessibility.</p>
+      <div class="lesson">
+        <div class="lesson-header">
+          <span class="lesson-title">Image embed</span>
+          <span class="lesson-badge">syntax</span>
+        </div>
+        <div class="pane-grid">
+          <div class="pane">
+            <div class="pane-label">Markdown</div>
+            <pre><span class="token-sym">![</span>Alt text<span class="token-sym">](</span><span class="token-str">./image.png</span><span class="token-sym">)</span>
+
+<span class="token-sym">![</span>With title<span class="token-sym">](</span><span class="token-str">./img.png</span> <span class="token-cmt">"Caption"</span><span class="token-sym">)</span></pre>
+          </div>
+          <div class="pane">
+            <div class="pane-label">Preview</div>
+            <div class="preview">
+              <div style="background:var(--surface2);border:1px dashed var(--border);border-radius:6px;padding:16px;text-align:center;color:var(--muted);font-size:12px;font-family:'JetBrains Mono',monospace;">[ image: Alt text ]</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+
+    <!-- ── CODE ── -->
+    <div class="section">
+      <span class="section-anchor" id="code"></span>
+      <div class="section-header">
+        <span class="section-tag">` `</span>
+        <h2>Code</h2>
+      </div>
+      <p>Inline code uses single backticks. Fenced code blocks use triple backticks with an optional language tag for syntax highlighting.</p>
+      <div class="lesson">
+        <div class="lesson-header">
+          <span class="lesson-title">Inline code</span>
+          <span class="lesson-badge">inline</span>
+        </div>
+        <div class="pane-grid">
+          <div class="pane">
+            <div class="pane-label">Markdown</div>
+            <pre>Run <span class="token-sym">`</span><span class="token-str">npm install</span><span class="token-sym">`</span> to start.</pre>
+          </div>
+          <div class="pane">
+            <div class="pane-label">Preview</div>
+            <div class="preview"><p>Run <code>npm install</code> to start.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="lesson" style="margin-top:12px">
+        <div class="lesson-header">
+          <span class="lesson-title">Fenced code block</span>
+          <span class="lesson-badge">block</span>
+        </div>
+        <div class="pane-grid">
+          <div class="pane">
+            <div class="pane-label">Markdown</div>
+            <pre><span class="token-sym">```</span><span class="token-kw">javascript</span>
+<span class="token-kw">const</span> greet = (<span class="token-str">name</span>) =&gt; {
+  <span class="token-kw">return</span> <span class="token-str">`Hello, ${name}!`</span>;
+};
+<span class="token-sym">```</span></pre>
+          </div>
+          <div class="pane">
+            <div class="pane-label">Preview</div>
+            <div class="preview">
+              <pre><code>const greet = (name) => {
+  return `Hello, ${name}!`;
+};</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── TABLES ── -->
+    <div class="section">
+      <span class="section-anchor" id="tables"></span>
+      <div class="section-header">
+        <span class="section-tag">|</span>
+        <h2>Tables</h2>
+      </div>
+      <p>Use pipes <code>|</code> to create columns. A separator row of dashes defines the header. Colons in the separator control alignment.</p>
+      <div class="lesson">
+        <div class="lesson-header">
+          <span class="lesson-title">Basic table</span>
+          <span class="lesson-badge">block</span>
+        </div>
+        <div class="pane-grid">
+          <div class="pane">
+            <div class="pane-label">Markdown</div>
+            <pre><span class="token-sym">|</span> Name    <span class="token-sym">|</span> Role    <span class="token-sym">|</span>
+<span class="token-sym">|</span> ------- <span class="token-sym">|</span> ------- <span class="token-sym">|</span>
+<span class="token-sym">|</span> Alice   <span class="token-sym">|</span> Dev     <span class="token-sym">|</span>
+<span class="token-sym">|</span> Bob     <span class="token-sym">|</span> Design  <span class="token-sym">|</span></pre>
+          </div>
+          <div class="pane">
+            <div class="pane-label">Preview</div>
+            <div class="preview">
+              <table>
+                <tr><th>Name</th><th>Role</th></tr>
+                <tr><td>Alice</td><td>Dev</td></tr>
+                <tr><td>Bob</td><td>Design</td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <!-- ── TASK LISTS ── -->
+    <div class="section">
+      <span class="section-anchor" id="tasks"></span>
+      <div class="section-header">
+        <span class="section-tag">☑</span>
+        <h2>Task Lists</h2>
+      </div>
+      <p>GitHub and many Markdown renderers support task lists with checkboxes. Use <code>- [ ]</code> for unchecked and <code>- [x]</code> for checked.</p>
+      <div class="lesson">
+        <div class="lesson-header">
+          <span class="lesson-title">Checkbox list</span>
+          <span class="lesson-badge">GFM</span>
+        </div>
+        <div class="pane-grid">
+          <div class="pane">
+            <div class="pane-label">Markdown</div>
+            <pre><span class="token-sym">- [x]</span> Write the README
+<span class="token-sym">- [x]</span> Add screenshots
+<span class="token-sym">- [ ]</span> Publish to GitHub</pre>
+          </div>
+          <div class="pane">
+            <div class="pane-label">Preview</div>
+            <div class="preview">
+              <ul style="list-style:none;padding:0">
+                <li>✅ Write the README</li>
+                <li>✅ Add screenshots</li>
+                <li>☐ Publish to GitHub</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── BADGES ── -->
+    <div class="section">
+      <span class="section-anchor" id="badges"></span>
+      <div class="section-header">
+        <span class="section-tag">🏷</span>
+        <h2>Badges</h2>
+      </div>
+      <p>Badges are just Markdown images pointing to shield services like <a href="https://shields.io" style="color:var(--accent)">shields.io</a>. They're common at the top of READMEs.</p>
+      <div class="lesson">
+        <div class="lesson-header">
+          <span class="lesson-title">Status badges</span>
+          <span class="lesson-badge">pattern</span>
+        </div>
+        <div class="pane-grid">
+          <div class="pane">
+            <div class="pane-label">Markdown</div>
+            <pre><span class="token-sym">![</span>License<span class="token-sym">](</span><span class="token-str">https://img.shields.io/
+  badge/license-MIT-blue</span><span class="token-sym">)</span>
+
+<span class="token-sym">![</span>Version<span class="token-sym">](</span><span class="token-str">https://img.shields.io/
+  badge/version-1.0.0-green</span><span class="token-sym">)</span></pre>
+          </div>
+          <div class="pane">
+            <div class="pane-label">Preview</div>
+            <div class="preview" style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+              <span style="background:#2a5298;color:#fff;font-size:11px;font-family:'JetBrains Mono',monospace;padding:3px 8px;border-radius:4px">license: MIT</span>
+              <span style="background:#1a6b2e;color:#fff;font-size:11px;font-family:'JetBrains Mono',monospace;padding:3px 8px;border-radius:4px">version: 1.0.0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- RIGHT NAVIGATION -->
+  <nav class="right-nav">
+    <div class="nav-label">On this page</div>
+    <div class="nav-section-title">Basics</div>
+    <ul class="nav-list">
+      <li><a href="#headings" class="nav-link"># Headings</a></li>
+      <li><a href="#paragraphs" class="nav-link">¶ Paragraphs</a></li>
+      <li><a href="#emphasis" class="nav-link">** Emphasis</a></li>
+    </ul>
+    <div class="nav-section-title">Structure</div>
+    <ul class="nav-list">
+      <li><a href="#lists" class="nav-link">— Lists</a></li>
+      <li><a href="#blockquotes" class="nav-link">&gt; Blockquotes</a></li>
+      <li><a href="#hr" class="nav-link">— Horizontal Rule</a></li>
+    </ul>
+    <div class="nav-section-title">Rich Content</div>
+    <ul class="nav-list">
+      <li><a href="#links" class="nav-link">[] Links</a></li>
+      <li><a href="#images" class="nav-link">! Images</a></li>
+      <li><a href="#code" class="nav-link">` ` Code</a></li>
+      <li><a href="#tables" class="nav-link">| Tables</a></li>
+    </ul>
+    <div class="nav-section-title">Extended</div>
+    <ul class="nav-list">
+      <li><a href="#tasks" class="nav-link">☑ Task Lists</a></li>
+      <li><a href="#badges" class="nav-link">🏷 Badges</a></li>
+    </ul>
+  </nav>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
